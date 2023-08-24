@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "GFG Shortcut Submit",
+    "version": "1.0",
+    "description": "Capture Ctrl+Enter keypresses",
+    "permissions": ["activeTab"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://practice.geeksforgeeks.org/problems/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+          "16": "images/dog.png",
+          "48": "images/dog.png",
+          "128": "images/dog.png"
+        }    
+  }
+}
+  
