@@ -14,12 +14,21 @@
       }
     ],
     "browser_action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-          "16": "images/dog.png",
-          "48": "images/dog.png",
-          "128": "images/dog.png"
-        }    
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/dog.png",
+        "48": "images/dog.png",
+        "128": "images/dog.png"
+      }
+    },
+    "icons": {
+      "16": "images/dog.png",
+      "48": "images/dog.png",
+      "128": "images/dog.png"
+    },
+    "permissions": [
+      "activeTab",
+      "storage"
+    ]
   }
-}
   
